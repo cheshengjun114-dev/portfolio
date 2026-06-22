@@ -5,15 +5,16 @@ const navLinks = document.querySelectorAll(".nav-link");
 const sections = document.querySelectorAll(".section");
 const themeToggle = document.querySelector(".theme-toggle");
 const themeLabel = document.querySelector(".theme-label");
+const themeStorageKey = "portfolio-theme-v3";
 
 function getInitialTheme() {
-  const savedTheme = localStorage.getItem("portfolio-theme");
+  const savedTheme = localStorage.getItem(themeStorageKey);
 
   if (savedTheme === "light" || savedTheme === "dark") {
     return savedTheme;
   }
 
-  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  return "light";
 }
 
 function applyTheme(theme) {
@@ -58,7 +59,7 @@ function updateActiveLink() {
 themeToggle.addEventListener("click", () => {
   const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
 
-  localStorage.setItem("portfolio-theme", nextTheme);
+  localStorage.setItem(themeStorageKey, nextTheme);
   applyTheme(nextTheme);
 });
 
