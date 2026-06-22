@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Java와 Spring Boot를 공부하며 서비스 흐름과 예외 처리를 고민하는 신입 백엔드 개발자 차승준의 포트폴리오입니다.">
+  <title>차승준 | Backend Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="주요 메뉴">
+      <a class="logo" href="#hero" aria-label="처음으로 이동">
+        <span class="logo-mark">&lt;/&gt;</span>
+        <span>Cha.dev</span>
+      </a>
+
+      <div class="nav-right">
+        <div class="nav-menu">
+          <a class="nav-link" href="#about">About</a>
+          <a class="nav-link" href="#stack">Stack</a>
+          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link nav-contact" href="#contact">Contact</a>
+        </div>
+
+        <button class="theme-toggle" type="button" aria-label="다크 모드로 변경" aria-pressed="false">
+          <span class="theme-icon" aria-hidden="true">◐</span>
+          <span class="theme-label">Dark</span>
+        </button>
+
+        <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">JUNIOR JAVA BACKEND DEVELOPER</p>
+        <h1>
+          서비스 흐름을 이해하고<br>
+          오류를 끝까지 개선하는<br>
+          개발자 <strong>차승준</strong>입니다.
+        </h1>
+        <p class="hero-description">
+          Java와 Spring Boot를 중심으로 게시판, 댓글, 출석 체크, 포인트 기능을 구현하며
+          사용자 흐름과 예외 상황까지 함께 고민하는 신입 백엔드 개발자입니다.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">프로젝트 보기</a>
+          <a class="button button-outline" href="#contact">연락하기</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="code-window">
+          <div class="window-bar"><span></span><span></span><span></span></div>
+          <pre><code><span class="code-purple">@Service</span>
+<span class="code-blue">public class</span> Developer {
+  <span class="code-blue">private final</span> String name =
+      <span class="code-green">"차승준"</span>;
+
+  <span class="code-blue">public</span> Result solve(Problem p) {
+    <span class="code-purple">return</span> p.analyze()
+      .implement()
+      .improve();
+  }
+}</code></pre>
+        </div>
+        <span class="visual-dot dot-a"></span>
+        <span class="visual-dot dot-b"></span>
+        <span class="visual-dot dot-c"></span>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-card">
+        <div class="profile-box">
+          <img class="profile-image" src="images/profile-cha-seungjun.jpeg" alt="차승준 프로필 사진">
+          <span class="profile-badge">&lt;/&gt;</span>
+        </div>
+
+        <div class="about-copy">
+          <p class="section-kicker">ABOUT ME</p>
+          <h2>작은 오류도 놓치지 않고<br>서비스 완성도를 높이는 개발자</h2>
+          <p>
+            ESG(Eat Stat Gram)와 탄소커넥트 팀 프로젝트를 진행하며 비교하기, Choice 흐름,
+            게시판, 프로필, 출석 체크와 포인트 기능을 경험했습니다. 오류를 재현하고
+            원인을 기록하며, 해결 과정을 팀과 공유하는 습관을 중요하게 생각합니다.
+          </p>
+          <ul class="strength-list">
+            <li>오류 상황을 재현하고 원인을 끝까지 추적합니다.</li>
+            <li>컴포넌트 구조와 API 데이터 흐름을 함께 이해합니다.</li>
+            <li>체크리스트로 누락을 줄이고 해결 과정을 공유합니다.</li>
+          </ul>
+        </div>
+
+        <div class="stats" aria-label="개발자 요약">
+          <article>
+            <span>01</span>
+            <small>교육 과정</small>
+            <strong>수료 예정</strong>
+          </article>
+          <article>
+            <span>02</span>
+            <small>팀 프로젝트</small>
+            <strong>Final / Semi</strong>
+          </article>
+          <article>
+            <span>03</span>
+            <small>주요 경험</small>
+            <strong>비교 / 게시판</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="stack section" id="stack">
+      <div class="section-heading section-heading-center">
+        <p class="section-kicker">TECH STACK</p>
+        <h2>프로젝트에서 직접 사용하며 익힌 기술입니다.</h2>
+      </div>
+
+      <div class="stack-grid">
+        <article class="stack-card">
+          <span class="stack-symbol blue">FE</span>
+          <h3>Frontend</h3>
+          <ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>jQuery</li><li>React</li></ul>
+        </article>
+        <article class="stack-card">
+          <span class="stack-symbol green">BE</span>
+          <h3>Backend</h3>
+          <ul><li>Java</li><li>Spring</li><li>Spring Boot</li><li>REST API</li><li>MyBatis</li></ul>
+        </article>
+        <article class="stack-card">
+          <span class="stack-symbol cyan">DB</span>
+          <h3>Database</h3>
+          <ul><li>MySQL</li><li>Oracle</li><li>SQL Mapper</li><li>Query Tuning</li></ul>
+        </article>
+        <article class="stack-card">
+          <span class="stack-symbol purple">IN</span>
+          <h3>Infra</h3>
+          <ul><li>AWS EC2</li><li>S3</li><li>RDS</li><li>CloudFront</li><li>Firebase</li></ul>
+        </article>
+        <article class="stack-card">
+          <span class="stack-symbol orange">DO</span>
+          <h3>DevOps</h3>
+          <ul><li>Docker</li><li>Git / GitHub</li><li>GitHub Actions</li><li>협업 브랜치 관리</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="section-heading">
+        <p class="section-kicker">PROJECTS</p>
+        <h2>직접 구현하고 개선한 프로젝트 경험</h2>
+      </div>
+
+      <div class="project-list">
+        <article class="project-card">
+          <div class="project-preview esg-preview" role="img" aria-label="ESG 프로젝트 임시 미리보기">
+            <div class="preview-nav"><strong>ESG</strong><span>메뉴 탐색 · 비교하기 · 후기</span></div>
+            <div class="preview-hero">
+              <small>EAT · SEARCH · GATHER</small>
+              <strong>오늘 먹을 버거,<br>비교하고 고르세요</strong>
+              <span>가격과 영양 정보를 한 화면에서 비교합니다.</span>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="tags"><span>Java</span><span>Spring Boot</span><span>React</span><span>MySQL</span></div>
+            <h3>ESG: 햄버거 메뉴 비교 및 후기 서비스</h3>
+            <p>
+              메뉴의 가격과 영양 정보를 비교하고 선택 기록을 바탕으로 후기를 작성하는 서비스입니다.
+              choiceId를 후기 작성 자격처럼 사용해 사용자 흐름을 연결했습니다.
+            </p>
+            <ul class="project-points">
+              <li>담당: Stat 비교하기, Choice, 게시판, 프로필 페이지</li>
+              <li>회원 최대 3개, 비회원 최대 2개의 메뉴 비교 흐름 구성</li>
+              <li>choiceId가 있을 때만 후기 작성이 가능한 동선 구현</li>
+            </ul>
+            <div class="project-actions">
+              <span class="button button-small button-disabled" aria-disabled="true">Demo 준비중</span>
+              <a class="button button-small button-outline" href="https://github.com/cheshengjun114-dev/ESG-MAIN" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-preview carbon-preview" role="img" aria-label="탄소커넥트 프로젝트 임시 미리보기">
+            <div class="carbon-side"><strong>탄소커넥트</strong><span>맵 커뮤니티</span><span>친환경 캠페인</span><span>미션</span></div>
+            <div class="carbon-map"><span>대한민국</span><b>탄소 배출량<br>710,193,061.54kg</b></div>
+            <div class="carbon-panel"><strong>인기 게시글</strong><span>지역별 친환경 활동을 공유합니다.</span><span>미션과 포인트로 참여합니다.</span></div>
+          </div>
+          <div class="project-content">
+            <div class="tags"><span>React</span><span>Spring Boot</span><span>Oracle</span><span>JWT</span></div>
+            <h3>탄소커넥트: 친환경 미션 및 지역 커뮤니티</h3>
+            <p>
+              친환경 활동을 지역 지도, 미션, 캠페인, 포인트와 커뮤니티 기능으로 연결한 팀 프로젝트입니다.
+            </p>
+            <ul class="project-points">
+              <li>지역 기반 지도, 캠페인, 미션, 포인트 기능 구성</li>
+              <li>Spring Boot, MyBatis, Oracle 기반 데이터 처리 경험</li>
+              <li>출석 중복 처리와 사용자별 활동 기록 흐름 구현</li>
+            </ul>
+            <div class="project-actions">
+              <span class="button button-small button-disabled" aria-disabled="true">Demo 준비중</span>
+              <a class="button button-small button-outline" href="https://github.com/cheshengjun114-dev/map-C-semiProject" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-preview debug-preview" role="img" aria-label="오류 개선 경험 코드 미리보기">
+            <div class="debug-line"><span>01</span><code>if (isDuplicate(userId, date))</code></div>
+            <div class="debug-line"><span>02</span><code>  throw new DuplicateAttendance();</code></div>
+            <div class="debug-line active"><span>03</span><code>return pointService.reward(userId);</code></div>
+            <div class="debug-status">TEST PASSED · EXCEPTION HANDLED</div>
+          </div>
+          <div class="project-content">
+            <div class="tags"><span>React</span><span>Spring Boot</span><span>Debugging</span></div>
+            <h3>컴포넌트 구조 분석과 예외 처리 개선</h3>
+            <p>
+              댓글 화면 갱신 문제와 회원가입 아이디 중복 검증 누락 등 서비스 흐름을 깨는 문제를
+              재현하고 원인을 기록해 배포 전에 개선했습니다.
+            </p>
+            <ul class="project-points">
+              <li>배포 전 주요 오류를 체크리스트로 정리해 공유</li>
+              <li>기능 구현뿐 아니라 예외 상황과 사용자 흐름 점검</li>
+              <li>오류 재현, 원인 분석, 수정 확인의 순서로 문제 해결</li>
+            </ul>
+            <div class="project-actions">
+              <a class="button button-small button-primary" href="https://github.com/cheshengjun114-dev/ESG-MAIN" target="_blank" rel="noopener noreferrer">ESG 코드</a>
+              <a class="button button-small button-outline" href="https://github.com/cheshengjun114-dev/map-C-semiProject" target="_blank" rel="noopener noreferrer">탄소커넥트 코드</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-card">
+        <div>
+          <p class="section-kicker">CONTACT</p>
+          <h2>기능 구현을 넘어 서비스 흐름을 고민하겠습니다.</h2>
+          <p>함께 성장할 신입 Java 백엔드 개발자를 찾고 계신다면 편하게 연락해 주세요.</p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:cheshengjun114@gmail.com"><span>＠</span><small>Email</small></a>
+          <a href="https://github.com/cheshengjun114-dev" target="_blank" rel="noopener noreferrer"><span>GH</span><small>GitHub</small></a>
+          <a href="https://open.kakao.com/" target="_blank" rel="noopener noreferrer"><span>KO</span><small>KakaoTalk</small></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="#hero"><span class="logo-mark">&lt;/&gt;</span><span>Cha.dev</span></a>
+    <p>© 2026 Cha Seungjun. Designed and coded by Cha Seungjun.</p>
+    <div class="footer-links">
+      <a href="https://github.com/cheshengjun114-dev" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="mailto:cheshengjun114@gmail.com">Email</a>
+    </div>
+  </footer>
+</body>
+</html>
